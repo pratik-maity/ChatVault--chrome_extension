@@ -1,0 +1,289 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ChatVault Export</title>
+<style>
+:root{--bg:#ffffff;--fg:#1f2937;--muted:#6b7280;--border:#e5e7eb;--card:#f9fafb;--user:#eef6ff;--code-bg:#0d1117;--code-fg:#e6edf3}
+*{box-sizing:border-box}
+body{font-family:ui-sans-system,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:860px;margin:0 auto;padding:32px 20px;color:var(--fg);line-height:1.7;background:var(--bg)}
+h1{font-size:28px;margin:0 0 6px 0}
+small{color:var(--muted)}
+.message{margin:22px 0;padding:18px 20px;border-radius:14px;border:1px solid var(--border)}
+.message.You{background:var(--user);border-color:#bfdbfe}
+.message.ChatGPT{background:var(--card)}
+.message h3{font-size:11px;letter-spacing:0.08em;opacity:0.6;margin:0 0 10px 0;text-transform:uppercase}
+pre{background:var(--code-bg);color:var(--code-fg);padding:16px;border-radius:10px;overflow:auto;margin:14px 0}
+code{background:#f3f4f6;padding:2px 6px;border-radius:6px;font-size:0.92em}
+pre code{background:transparent;padding:0;color:inherit}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+th,td{border:1px solid var(--border);padding:9px 12px;text-align:left}
+th{background:#f3f4f6;font-weight:600}
+blockquote{border-left:4px solid #6c5ce7;background:#f8f7ff;padding:10px 16px;margin:16px 0;border-radius:0 8px 8px 0}
+a{color:#5b4ae3;text-decoration:none}a:hover{text-decoration:underline}
+hr{border:none;border-top:1px solid var(--border);margin:24px 0}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:13px}
+@media print{body{padding:0}.message{break-inside:avoid}footer{position:fixed;bottom:0;width:100%}}
+</style></head><body>
+<h1>ChatVault Export</h1><p><small>9/4/2026, 1:02:13 PM | https://chatgpt.com/c/6a9a6965-6d08-83e8-94ff-a28b002f2c1f</small></p><div class="message You"><h3>You</h3>I am testing a custom Chrome extension designed to scrape and extract AI chatbot conversations. To thoroughly stress-test its parsing logic against modern web architectures, I need you to generate a single, highly diverse, and long multi-format response. 
+
+Please reply with a mock multi-disciplinary data analysis report that deliberately includes all of the following structural elements, UI nodes, and layout edge cases:
+
+1. Hierarchy & Typographical Styles:
+- A main H1 title, H2 subheadings, and H3 sub-sections.
+- Text containing **bold**, *italics*, and a combination of ***both***.
+- A blockquote structure (<code>></code>) containing at least two lines of text and an inline <code>code snippet</code>.
+- A strikethrough text element (~~like this~~).
+- Keyboard input tags (like <kbd>Ctrl</kbd> + <kbd>C</kbd>).
+
+2. Code Blocks (Syntax Highlighting):
+- An inline code block (<code>like_this</code>) embedded inside a standard sentence.
+- A multi-line Python code block containing indentation, comments, strings, and standard logic.
+- A multi-line HTML/CSS code block to test how it handles nested brackets and tags without breaking the scraper's parent DOM logic.
+
+3. Mathematical & Scientific Notation (LaTeX):
+- An inline math formula using LaTeX notation (e.g.,  E = mc²  or E = mc²).
+- A centered block math formula (display mode) using LaTeX notation (e.g., \[\sum\] or \[\sum\] format) to see how the scraper handles KaTeX/MathJax rendering pipelines.
+
+4. Tables and Lists:
+- A Markdown table with at least 3 columns and 4 rows. Make sure the table cells contain mixed formatting inside them (e.g., one cell has bold text, another has a code snippet, another has a hyperlink).
+- A nested list (e.g., a numbered list where item #2 contains a bulleted sub-list, and those bullets contain inline bold text).
+- A task list with checkboxes (e.g., - [x] completed and - [ ] uncompleted items).
+
+5. Links & Spacing Edge Cases:
+- Multiple standard hyperlinks using descriptive anchor text pointing to real or placeholder URLs.
+- A section with deliberate extra vertical spacing, line breaks (<code><br></code>), or non-breaking spaces to test how text separation is handled.
+
+6. Text-Based Visual Diagrams (Mermaid.js / ASCII / SVGs):
+- Include a raw text block representing a flowchart structure (such as a Mermaid markdown block starting with <pre><code>mermaid) to test if your parser accidentally strips graph definitions or breaks on flowchart nodes.
+- A small block of structured ASCII art or a simple embedded `<svg>` path tag.
+
+7. Artifacts, Canvas, and Side-Panel Placeholders:
+- Simulate a separate "Artifact" or "Canvas" block using custom layout markers or descriptive tags (e.g., "[Artifact: react-dashboard.js]"). This helps verify if the scraper can capture text trapped inside side-panel overlays or special sandboxed `<iframe>` tags.
+
+8. System Status Badges, Callout Boxes, and Custom Alert UI Components:
+- Create "Callout boxes" or "Note boxes" using specialized styling rules often used by chatbots (e.g., `:::note` or `> [!WARNING]` alert markdown formats) to test if custom alert components lose their content or context during extraction.
+
+9. Execution Output Logs & Terminal Prompts:
+- A block mimicking a command-line terminal environment (e.g., starting with `$ curl -X POST`) followed by raw, unformatted JSON server logs directly beneath it to test mixed terminal outputs.
+
+10. Multi-Lingual & Directional Text Elements:
+- A sentence containing Right-to-Left (RTL) text (like Arabic or Hebrew) mixed seamlessly inside an English Left-to-Right sentence, plus some non-Latin script characters (like Japanese or emojis) to test character encoding (UTF-8) and direction formatting.
+
+Please combine all 10 of these into a cohesive, realistic-looking AI response so I can copy the resulting DOM structure or feed it directly to my extension's selector logic. Do not include any conversational intro or outro—start directly with the H1 title.</code></pre>Show moreShow less</div><div class="message ChatGPT"><h3>ChatGPT</h3><h1>Multi-Disciplinary AI Conversation Parsing & Data Analysis Report</h1>
+<h2>1. Executive Summary</h2>
+<p>This mock report evaluates a hypothetical conversational-data pipeline across <strong>web extraction</strong>, <em>natural-language processing</em>, and <em><strong>multimodal structural analysis</strong></em>. The parser should preserve semantic hierarchy while distinguishing <code>inline_tokens</code> from rendered UI components.</p>
+<blockquote><p><strong>Primary observation:</strong> The extraction layer must preserve both visible text and structural relationships.<br>
+<strong>Secondary observation:</strong> An inline <code>parse_node()</code> operation should not accidentally consume sibling elements.</p></blockquote>
+<p>The deprecated extraction strategy legacy DOM walker was replaced with a more robust tree-aware approach.</p>
+<p>Keyboard interaction example: press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy the selected diagnostic output.</p>
+<h3>1.1 Key Findings</h3>
+<p>The synthetic dataset contains 18,420 conversation nodes. The measured extraction accuracy was <strong>97.8%</strong>, while multilingual token preservation reached <em>99.4%</em>. A combined confidence score can be represented as E=mc2, illustrating how compact mathematical notation can coexist with ordinary prose.</p>
+<h3>1.2 Statistical Model</h3>
+<p>For a simplified weighted scoring model:</p>
+S=∑i=1n​wi​∑i=1n​wi​xi​​​
+<p>where xi​ represents the normalized feature value and wi​ represents its corresponding importance weight.</p>
+<hr>
+<h2>2. Experimental Data</h2>
+<h3>2.1 Representative Extraction Samples</h3>
+<p>A parser might internally normalize a conversation identifier as <code>conversation_node_id</code> while retaining its original presentation.</p>
+<div style="overflow-x:auto"><table><thead><tr><th>Dataset</th><th>Extraction Status</th><th>Parser Metric</th><th>Reference</th></tr></thead><tbody><tr><td>Chat-A</td><td>Complete</td><td>98.7%</td><td>Schema documentation</td></tr><tr><td>Chat-B</td><td>Partial</td><td>94.2%</td><td>Validation report</td></tr><tr><td>Chat-C</td><td>Complete + Verified</td><td>99.1%</td><td>Benchmark</td></tr><tr><td>Chat-D</td><td>Warning</td><td>88.6%</td><td>Issue tracker</td></tr></tbody></table></div>
+<h3>2.2 Processing Pipeline</h3>
+<ol><li><p><strong>Acquire</strong></p>
+<ul><li><p>Capture visible conversation nodes.</p></li><li><p>Preserve <strong>nested structures</strong>.</p></li><li><p>Record source attributes.</p></li></ul></li><li><p><strong>Normalize</strong></p>
+<ul><li><p>Remove irrelevant presentation metadata.</p></li><li><p>Preserve <code>code</code>, formulas, and links.</p></li><li><p>Detect malformed nodes.</p></li></ul></li><li><p><strong>Validate</strong></p>
+<ul><li><p>Compare extracted text against expected DOM structure.</p></li><li><p>Measure character-level and node-level recall.</p></li><li><p>Flag unexpected mutations.</p></li></ul></li><li><p><strong>Export</strong></p>
+<ul><li><p>Serialize the result into JSON.</p></li><li><p>Preserve ordering.</p></li><li><p>Maintain Unicode fidelity.</p></li></ul></li></ol>
+<h3>2.3 Validation Checklist</h3>
+<ul><li><p>Headings retained</p></li><li><p>Inline formatting retained</p></li><li><p>Code blocks retained</p></li><li><p>Mathematical expressions retained</p></li><li><p>Shadow-DOM edge cases fully validated</p></li><li><p>Cross-iframe extraction validated</p></li></ul>
+<hr>
+<h2>3. Reference Implementations</h2>
+<h3>3.1 Python Processing Example</h3>
+<pre><code>PythonRunfrom dataclasses import dataclass
+
+@dataclass
+class ConversationNode:
+    node_id: str
+    text: str
+    depth: int = 0
+
+def normalize(node: ConversationNode) -> str:
+    """Normalize extracted conversation text."""
+    text = node.text.strip()
+
+    # Preserve meaningful code and mathematical content.
+    if not text:
+        return ""
+
+    if node.depth > 3:
+        text = f"[nested] {text}"
+
+    return text
+
+nodes = [
+    ConversationNode("a1", "Hello, world!", 0),
+    ConversationNode("a2", "Nested analysis", 2),
+]
+
+for node in nodes:
+    result = normalize(node)
+    print(f"{node.node_id}: {result}")</code></pre>
+<h3>3.2 HTML/CSS Rendering Fixture</h3>
+<pre><code>HTML<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .analysis-card {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      padding: 16px;
+    }
+
+    .analysis-card[data-status="warning"] {
+      border: 2px solid #cc8800;
+    }
+
+    .analysis-card code {
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <article class="analysis-card" data-status="warning">
+    <header>
+      <h2>Extraction Fixture</h2>
+    </header>
+    <section>
+      <p>Nested <strong>DOM content</strong> appears here.</p>
+      <pre><code>&lt;div&gt;Synthetic content&lt;/div&gt;</code></pre>
+    </section>
+  </article>
+</body>
+</html></code></pre>
+<hr>
+<h2>4. Mermaid Flowchart Fixture</h2>
+<pre><code>Diagram options</code></pre>
+<h3>4.1 ASCII Rendering Fixture</h3>
+<pre><code>+--------------------+
+                 | Conversation Input |
+                 +---------+----------+
+                           |
+                           v
+                 +--------------------+
+                 |   DOM Traversal    |
+                 +---------+----------+
+                           |
+             +-------------+-------------+
+             |                           |
+             v                           v
+       +-----------+               +-----------+
+       |   Text    |               |    Code   |
+       +-----------+               +-----------+
+             |                           |
+             +-------------+-------------+
+                           |
+                           v
+                 +--------------------+
+                 | Structured Output  |
+                 +--------------------+</code></pre>
+<h3>4.2 SVG Fixture</h3>
+<pre><code>SVG</code></pre>
+<hr>
+<h2>5. Artifact / Canvas Simulation</h2>
+<p>[Artifact: <code>react-dashboard.js</code>]</p>
+<pre><code>┌──────────────────────────────────────────┐
+│              ARTIFACT PANEL              │
+├──────────────────────────────────────────┤
+│ File: react-dashboard.js                 │
+│ Status: READY                            │
+│                                          │
+│ export default function Dashboard() {    │
+│   return <AnalyticsPanel />;             │
+│ }                                        │
+└──────────────────────────────────────────┘</code></pre>
+<p>[Canvas: <code>conversation-analysis.canvas</code>]</p>
+<pre><code>CANVAS_NODE_001
+  ├── title: "Extraction Overview"
+  ├── status: "validated"
+  └── children:
+      ├── metric_card
+      ├── chart
+      └── diagnostic_log</code></pre>
+<p>[Side Panel / iframe Placeholder]</p>
+<pre><code><iframe title="sandboxed-artifact">
+  [Sandbox Content]
+  Extraction result: 1,284 nodes
+  Hidden-panel state: expanded
+</iframe></code></pre>
+<hr>
+<h2>6. System Status & Callout Components</h2>
+<blockquote><p>[!NOTE]<br>
+<strong>Parser note:</strong> The artifact panel should be treated as a separate semantic region rather than ordinary paragraph text.</p></blockquote>
+<blockquote><p>[!WARNING]<br>
+<strong>Warning:</strong> Nested iframe content may not be available to a normal parent-document selector.</p></blockquote>
+<p>:::<br>
+This is a synthetic note component. Its contents should remain associated with the <code>note</code> container.<br>
+:::</p>
+<p>:::<br>
+Do not silently discard text merely because its presentation layer is implemented by a custom component.<br>
+:::</p>
+<h3>6.1 Status Badges</h3>
+<p><code>● SYSTEM: ONLINE</code><br>
+<code>● PARSER: READY</code><br>
+<code>● DOM WALKER: 97.8%</code><br>
+<code>● ARTIFACT CHANNEL: DEGRADED</code></p>
+<hr>
+<h2>7. Terminal & Server Output</h2>
+<pre><code>$ curl -X POST https://example.com/api/extract \
+  -H "Content-Type: application/json" \
+  -d '{"conversation_id":"demo-042","include_artifacts":true}'
+
+HTTP/1.1 200 OK
+Content-Type: application/json</code></pre>
+<pre><code>JSON{
+  "request_id": "req_8f2a91",
+  "status": "success",
+  "nodes_extracted": 1284,
+  "artifacts": 2,
+  "warnings": [
+    "sandboxed iframe not traversed",
+    "shadow-root content partially unavailable"
+  ],
+  "metrics": {
+    "text_recall": 0.987,
+    "format_recall": 0.962,
+    "unicode_integrity": 0.994
+  }
+}</code></pre>
+<hr>
+<h2>8. Multilingual & Bidirectional Text</h2>
+<p>The extraction engine must preserve English text alongside Arabic <strong>مرحبا بالعالم</strong> and Hebrew <strong>שלום עולם</strong> without reversing or corrupting the surrounding sentence.</p>
+<p>Japanese sample: <strong>こんにちは、世界。</strong> 🇯🇵</p>
+<p>Mixed-direction diagnostic:</p>
+<pre><code>LTR → English segment → العربية → English continuation → עברית → 日本語 → UTF-8 ✓</code></pre>
+<p>A realistic conversational string might therefore contain:</p>
+<blockquote><p>User says: “The result is <strong>successful</strong> — مرحباً — but the Hebrew segment שלום should remain correctly ordered — こんにちは!”</p></blockquote>
+<hr>
+<h2>9. Spacing & Line-Break Stress Fixture</h2>
+<p>The following section intentionally introduces unusual whitespace.</p>
+<p>First line.</p>
+<p>Second line after extra vertical spacing.</p>
+<br>
+<p>Third line after an explicit HTML break.<br>Fourth line immediately follows it.</p>
+<p>Indented text using non-breaking spaces.</p>
+<pre><code>BEGIN
+     
+     
+MIDDLE
+
+        INDENTED REGION
+
+     
+END</code></pre>
+<hr>
+<h2>10. Final Assessment</h2>
+<p>The stress-test corpus deliberately combines <strong>semantic hierarchy</strong>, <em>typographical variation</em>, <em><strong>mixed emphasis</strong></em>, nested lists, tables, code, mathematical notation, diagrams, artifacts, alert components, terminal output, whitespace anomalies, and multilingual bidirectional text.</p>
+<p>The expected parser behavior is straightforward:</p>
+<ol><li><p>Preserve <strong>content</strong>.</p></li><li><p>Preserve meaningful <strong>structure</strong>.</p></li><li><p>Preserve <strong>ordering</strong>.</p></li><li><p>Avoid conflating visually adjacent but semantically separate nodes.</p></li><li><p>Treat code, formulas, artifacts, and custom UI containers as distinct content types.</p></li><li><p>Preserve Unicode characters such as <code>مرحبا</code>, <code>שלום</code>, <code>こんにちは</code>, and <code>🚀</code>.</p></li><li><p>Avoid silently dropping content merely because it resides inside an unusual rendering layer.</p></li></ol></div>
+<footer>
+  Made with ❤️ by Pratik ● <a href="https://github.com" target="_blank">GitHub</a>
+  <!-- change the URL here - replace https://github.com with your repo url -->
+</footer>
+</body></html>

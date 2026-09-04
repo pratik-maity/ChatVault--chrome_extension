@@ -1,0 +1,202 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ChatVault Export</title>
+<style>
+:root{--bg:#ffffff;--fg:#1f2937;--muted:#6b7280;--border:#e5e7eb;--card:#f9fafb;--user:#eef6ff;--code-bg:#0d1117;--code-fg:#e6edf3}
+*{box-sizing:border-box}
+body{font-family:ui-sans-system,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:860px;margin:0 auto;padding:32px 20px;color:var(--fg);line-height:1.7;background:var(--bg)}
+h1{font-size:28px;margin:0 0 6px 0}
+small{color:var(--muted)}
+.message{margin:22px 0;padding:18px 20px;border-radius:14px;border:1px solid var(--border)}
+.message.You{background:var(--user);border-color:#bfdbfe}
+.message.ChatGPT{background:var(--card)}
+.message h3{font-size:11px;letter-spacing:0.08em;opacity:0.6;margin:0 0 10px 0;text-transform:uppercase}
+pre{background:var(--code-bg);color:var(--code-fg);padding:16px;border-radius:10px;overflow:auto;margin:14px 0}
+code{background:#f3f4f6;padding:2px 6px;border-radius:6px;font-size:0.92em}
+pre code{background:transparent;padding:0;color:inherit}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}
+th,td{border:1px solid var(--border);padding:9px 12px;text-align:left}
+th{background:#f3f4f6;font-weight:600}
+blockquote{border-left:4px solid #6c5ce7;background:#f8f7ff;padding:10px 16px;margin:16px 0;border-radius:0 8px 8px 0}
+a{color:#5b4ae3;text-decoration:none}a:hover{text-decoration:underline}
+hr{border:none;border-top:1px solid var(--border);margin:24px 0}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:13px}
+@media print{body{padding:0}.message{break-inside:avoid}footer{position:fixed;bottom:0;width:100%}}
+</style></head><body>
+<h1>ChatVault Export</h1><p><small>9/4/2026, 1:01:06 PM | https://chatgpt.com/c/6a9a6a56-2fb0-83e8-adc8-25089982ba8d</small></p><div class="message You"><h3>You</h3><p><p><p><p><p><p><p><p>I am testing a custom Chrome extension designed to scrape and extract AI chatbot conversations. To thoroughly stress-test its scraping, parsing, and rendering logic, I need you to generate a single, highly diverse, and long multi-format response. 
+
+Please reply with a mock technical guide or data report that deliberately includes all of the following HTML/Markdown structural elements and edge cases in a natural layout:
+
+1. Hierarchy & Typographical Styles:
+- A main H1 title, H2 subheadings, and H3 sub-sections.
+- Text containing **bold**, *italics*, and a combination of ***both***.
+- A blockquote structure (<code>></code>) containing at least two lines of text and an inline <code>code snippet</code>.
+- A strikethrough text element (~~like this~~).
+- Keyboard input tags (like <kbd>Ctrl</kbd> + <kbd>C</kbd>).
+
+2. Code Blocks (Syntax Highlighting):
+- An inline code block (<code>like_this</code>) embedded inside a standard sentence.
+- A multi-line Python code block containing indentation, comments, strings, and standard logic.
+- A multi-line HTML/CSS code block to test how it handles nested brackets and tags without breaking the scraper's parent DOM logic.
+
+3. Mathematical & Scientific Notation (LaTeX):
+- An inline math formula using LaTeX notation (e.g., \( E = mc^2 \) or $E = mc^2$).
+- A centered block math formula (display mode) using LaTeX notation (e.g., \[\sum\] or $$ \sum $$ format) to see how the scraper handles KaTeX/MathJax rendering pipelines.
+
+4. Tables and Lists:
+- A Markdown table with at least 3 columns and 4 rows. Make sure the table cells contain mixed formatting inside them (e.g., one cell has bold text, another has a code snippet, another has a hyperlink).
+- A nested list (e.g., a numbered list where item #2 contains a bulleted sub-list, and those bullets contain inline bold text).
+- A task list with checkboxes (e.g., - [x] completed and - [ ] uncompleted items).
+
+5. Links & Spacing Edge Cases:
+- Multiple standard hyperlinks using descriptive anchor text pointing to real or placeholder URLs.
+- A section with deliberate extra vertical spacing, line breaks (<code><br></code>), or non-breaking spaces to test how text separation is handled.
+
+Please combine all of these into a cohesive, realistic-looking AI response so I can copy the resulting DOM structure or feed it directly to my extension's selector logic. Do not include any conversational intro or outro—start directly with the H1 title.</p></p>Show moreShow less</p></p></p></p></p></p></div><div class="message ChatGPT"><h3>ChatGPT</h3><p><p><p><p><p><p><p>Edit</p></p></p></p></p></p></p><h1>AI Conversation Extraction & Rendering Stress-Test Report</h1><h2>1. Executive Summary</h2><p>This mock report evaluates a hypothetical <strong>AI conversation extraction pipeline</strong> under a variety of modern web-rendering conditions. The parser must correctly preserve <em>semantic structure</em>, <strong><em>mixed typographical emphasis</em></strong>, code boundaries, mathematical notation, tables, hyperlinks, lists, and whitespace.</p><blockquote><p><strong>Parser validation note:</strong> Every structural node should retain its intended semantic meaning after extraction.<br>Inline <code>code_snippet()</code> must remain distinct from surrounding prose, while line breaks and nested elements should not cause accidental DOM boundary termination.</p></blockquote><p>The current parser version is production-ready <strong>under active stress testing</strong>. A representative identifier such as <code>conversation_node_01</code> should remain intact when surrounded by ordinary text.</p><p>Keyboard interactions can also be represented as <kbd>Ctrl</kbd> + <kbd>C</kbd>, <kbd>Ctrl</kbd> + <kbd>V</kbd>, or <kbd>Shift</kbd> + <kbd>Enter</kbd>.</p><h2>2. Parsing Architecture</h2><h3>2.1 Input Normalization</h3><p>The hypothetical extraction pipeline consists of five stages:</p><ol><li><p>DOM discovery</p></li><li><p>Node classification</p></li><li><p>Content normalization</p></li><li><p>Semantic reconstruction</p></li><li><p>Output serialization</p></li></ol><p>A normalized field such as <code>message.content</code> should not accidentally absorb sibling nodes, hidden interface elements, or metadata.</p><p>The system should distinguish <strong>visible conversational content</strong> from <em>presentation-only elements</em>, while still preserving <strong><em>meaningful formatting</em></strong>.</p><h3>2.2 Mathematical Content</h3><p>Relativity provides a simple inline test case: ( E = mc^2 ).</p><p>A display-math renderer should preserve an entire mathematical expression as one logical unit:</p><p>\frac{n(n+1)}{2}<br>$$</p><p>A second example combines variables, exponents, and a logarithm:</p><p>[<br>f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}<br>e^{-\frac{(x-\mu)^2}{2\sigma^2}}<br>]</p><p>The scraper should ideally extract the source notation rather than an unintelligible collection of presentation-layer KaTeX or MathJax DOM fragments.</p><h2>3. Representative Python Processing Pipeline</h2><p>The following implementation demonstrates a simplified extraction workflow:</p><pre><code>from dataclasses import dataclass
+from typing import List
+
+@dataclass
+class Message:
+    role: str
+    content: str
+    tokens: int = 0
+
+
+def normalize_message(text: str) -> str:
+    """Collapse unnecessary whitespace while preserving meaningful content."""
+    # Remove leading/trailing whitespace first.
+    cleaned = text.strip()
+
+    # Convert repeated spaces into a single space.
+    while "  " in cleaned:
+        cleaned = cleaned.replace("  ", " ")
+
+    return cleaned
+
+
+def extract_messages(nodes: List[dict]) -> List[Message]:
+    messages = []
+
+    for node in nodes:
+        # Ignore nodes that are explicitly hidden.
+        if node.get("hidden", False):
+            continue
+
+        role = node.get("role", "unknown")
+        raw_content = node.get("content", "")
+
+        if not isinstance(raw_content, str):
+            raw_content = str(raw_content)
+
+        content = normalize_message(raw_content)
+
+        # Simple token approximation for test purposes.
+        token_count = len(content.split())
+
+        messages.append(
+            Message(
+                role=role,
+                content=content,
+                tokens=token_count,
+            )
+        )
+
+    return messages
+
+
+if __name__ == "__main__":
+    sample_nodes = [
+        {
+            "role": "user",
+            "content": "Extract this message.",
+        },
+        {
+            "role": "assistant",
+            "content": "Extraction completed successfully.",
+        },
+    ]
+
+    results = extract_messages(sample_nodes)
+
+    for message in results:
+        print(f"{message.role}: {message.content}")</code></pre><h2>4. Nested HTML and CSS Rendering Test</h2><p>The following block intentionally contains nested tags, attributes, braces, selectors, strings, and CSS declarations. The parser must not confuse these characters with the actual enclosing conversation DOM.</p><pre><code><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversation Test Fixture</title>
+
+  <style>
+    .conversation {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 16px;
+      padding: 20px;
+    }
+
+    .message[data-role="assistant"] {
+      border: 1px solid #ccc;
+      background: white;
+    }
+
+    .message code {
+      font-family: "JetBrains Mono", monospace;
+      white-space: pre-wrap;
+    }
+
+    @media (max-width: 700px) {
+      .conversation {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="conversation" data-testid="conversation-root">
+    <article class="message" data-role="user">
+      <header>
+        <span class="role">User</span>
+      </header>
+
+      <div class="content">
+        <p>Test message containing <strong>nested markup</strong>.</p>
+
+        <pre><code class="language-python">
+def hello(name):
+    return f"Hello, {name}!"
+        </code></pre>
+      </div>
+    </article>
+
+    <article class="message" data-role="assistant">
+      <header>
+        <span class="role">Assistant</span>
+      </header>
+
+      <div class="content">
+        <p>
+          This response contains
+          <a href="https://example.com">a nested hyperlink</a>.
+        </p>
+
+        <div class="metadata">
+          <span data-value="{&quot;status&quot;:&quot;complete&quot;}">
+            Complete
+          </span>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html></code></pre><h2>5. Structured Dataset</h2><div style="overflow-x:auto"><table><thead><tr><th>Component</th><th>Extraction Status</th><th>Test Payload</th><th>Reference</th></tr></thead><tbody><tr><td>User message</td><td>Passed</td><td>message.user</td><td>DOM specification</td></tr><tr><td>Assistant message</td><td>Passed with warnings</td><td>message.assistant</td><td>HTML reference</td></tr><tr><td>Code block</td><td>Requires validation</td><td>python_parser()</td><td>Python docs</td></tr><tr><td>Mathematical block</td><td>Renderer-dependent</td><td>\sum x_i</td><td>KaTeX</td></tr></tbody></table></div><h2>6. Nested List Processing</h2><p>A realistic extraction workflow can be expressed as follows:</p><ol><li><p><strong>Discover conversation containers</strong></p><ul><li><p>Identify the primary message list.</p></li><li><p><strong>Exclude navigation and sidebar elements.</strong></p></li><li><p>Ignore duplicated accessibility-only nodes.</p></li></ul></li><li><p><strong>Classify each message</strong></p><ul><li><p>Determine whether the node represents a <strong>user</strong>, <strong>assistant</strong>, or system role.</p></li><li><p>Preserve metadata such as timestamps and identifiers.</p></li><li><p>Extract nested content without duplicating descendant text.</p></li><li><p>Verify that <code>code</code> elements remain separate from normal prose.</p></li></ul></li><li><p><strong>Serialize the result</strong></p><ul><li><p>Preserve headings.</p></li><li><p>Preserve emphasis.</p></li><li><p>Preserve hyperlinks.</p></li><li><p>Preserve mathematical notation.</p></li><li><p>Preserve ordered and unordered list relationships.</p></li></ul></li></ol><h2>7. Task-List Validation</h2><ul><li><p>Detect conversation root</p></li><li><p>Identify user and assistant messages</p></li><li><p>Preserve inline formatting</p></li><li><p>Extract fenced code blocks</p></li><li><p>Detect hyperlinks</p></li><li><p>Verify complex KaTeX DOM reconstruction</p></li><li><p>Verify deeply nested list extraction</p></li><li><p>Verify whitespace behavior across dynamically inserted nodes</p></li><li><p>Validate extraction after virtualized scrolling</p></li></ul><h2>8. Hyperlink and Attribute Tests</h2><p>The response contains several deliberately different links:</p><ul><li><p><a href="https://openai.com/">OpenAI</a></p></li><li><p><a href="https://developer.mozilla.org/">MDN Web Docs</a></p></li><li><p><a href="https://docs.python.org/3/">Python Documentation</a></p></li><li><p><a href="https://example.com/test?query=parser&mode=stress">Example placeholder</a></p></li><li><p><a href="/conversation/test-case">Relative-style placeholder</a></p></li><li><p><a href="#whitespace-stress-test">Anchor fragment</a></p></li></ul><p>A robust extractor should retain both the <strong>visible anchor text</strong> and its destination where the source DOM exposes both.</p><h2>9. Whitespace Stress Test</h2><p>The following section intentionally contains unusual spacing.</p><p>First paragraph.</p><p><br><br></p><p>Second paragraph after two explicit line-break elements.</p><p>This sentence begins with four non-breaking spaces.</p><p><br></p><p>There is also a blank line immediately above this sentence.</p><p><br></p><p>And here are several trailing whitespace characters after an otherwise ordinary line.</p><p><strong>Formatting should remain attached to the correct text even when whitespace nodes occur between inline elements.</strong></p><h2>10. DOM Edge-Case Matrix</h2><h3>10.1 Common Failure Modes</h3><div style="overflow-x:auto"><table><thead><tr><th>Edge Case</th><th>Expected Behavior</th><th>Failure Risk</th></tr></thead><tbody><tr><td>Nested <strong> inside <a></td><td>Preserve both semantics</td><td>Medium</td></tr><tr><td><pre><code> nesting</td><td>Preserve exact code content</td><td>High</td></tr><tr><td>Math renderer DOM</td><td>Recover logical formula</td><td>High</td></tr><tr><td>Empty paragraph</td><td>Preserve or intentionally omit</td><td>Medium</td></tr><tr><td><br> sequences</td><td>Preserve meaningful line breaks</td><td>Medium</td></tr><tr><td>Non-breaking spaces</td><td>Do not blindly collapse</td><td>Medium</td></tr><tr><td>Virtualized message list</td><td>Extract currently materialized nodes</td><td>High</td></tr><tr><td>Hidden duplicate text</td><td>Avoid double extraction</td><td>High</td></tr></tbody></table></div><h3>10.2 Recommended Assertions</h3><p>A test harness can validate several invariants:</p><pre><code>ASSERT message_count > 0
+ASSERT every_message_has_role
+ASSERT code_blocks_are_not_duplicated
+ASSERT links_preserve_href
+ASSERT headings_preserve_level
+ASSERT tables_preserve_rows_and_columns
+ASSERT math_blocks_remain_atomic
+ASSERT nested_lists_preserve_parent_child_relationships
+ASSERT hidden_nodes_are_not_extracted_as_visible_content</code></pre><h2>11. Final Extraction Checklist</h2><p>Before declaring the scraper reliable, verify that it can correctly process:</p><ol><li><p>Headings at multiple hierarchy levels.</p></li><li><p><strong>Bold</strong>, <em>italic</em>, and <strong><em>bold-italic</em></strong> text.</p></li><li><p><code>inline_code</code>.</p></li><li><p>Multi-line fenced code containing braces, quotes, indentation, and comments.</p></li><li><p>HTML containing nested elements and CSS containing <code>{}</code> blocks.</p></li><li><p>Inline LaTeX such as ( a^2+b^2=c^2 ).</p></li><li><p>Display LaTeX such as:</p></li></ol><p>[<br>\int_{-\infty}^{\infty} e^{-x^2},dx = \sqrt{\pi}<br>]</p><ol><li><p>Markdown tables with mixed formatting.</p></li><li><p>Nested ordered and unordered lists.</p></li><li><p>Checked and unchecked task items.</p></li><li><p>Standard hyperlinks and query-string URLs.</p></li><li><p>Explicit <code><br></code> elements.</p></li><li><p>Non-breaking spaces.</p></li><li><p>Empty or whitespace-only nodes.</p></li><li><p>Deeply nested DOM structures.</p></li></ol><h3>11.1 Expected Result</h3><p>The ideal extraction output should be <strong>structurally faithful rather than merely visually similar</strong>. Text order, semantic hierarchy, formatting boundaries, links, code, equations, and list relationships should survive serialization without accidental duplication, truncation, or flattening.</p><p>The parser should treat the conversation as a tree of semantic nodes—not simply as one large <code>innerText</code> string.</p><p><p><p><p>Add deliberate malformed Markdown casesAdd assistant-style conversational turns</p></p><p><p>Add deliberate malformed Markdown cases</p><p>Add assistant-style conversational turns</p><p>Clarify expected whitespace preservation rules</p></p></p></p></div>
+<footer>
+  Made with ❤️ by Pratik ● <a href="https://github.com" target="_blank">GitHub</a>
+  <!-- change the URL here - replace https://github.com with your repo url -->
+</footer>
+</body></html>
