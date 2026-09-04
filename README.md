@@ -20,7 +20,7 @@ I built this because I needed to save long research chats (like temple routes wi
 
 **Live Demo:** `Coming Soon - Chrome Web Store Link`
 
-**Demo Video:** `https://youtu.be/YOUR_VIDEO_ID` (placeholder - add your screen recording)
+**Demo Video:** <!--`https://youtu.be/YOUR_VIDEO_ID` (placeholder - add your screen recording)-->
 
 ### Screenshots
 
@@ -29,7 +29,7 @@ I built this because I needed to save long research chats (like temple routes wi
 | ![Popup](screenshots/popup.png) | ![MD](screenshots/markdown.png) | ![HTML](screenshots/html-export.png) |
 | Clean 2-button UI with footer | Perfect GitHub-flavored tables | Printable HTML with dark code blocks |
 
-> Place your screenshots in a `/screenshots` folder. The table above will auto-render.
+<!-- > Place your screenshots in a `/screenshots` folder. The table above will auto-render. -->
 
 ## 4. Key Features
 
@@ -168,10 +168,10 @@ If you plan to add analytics or a backend later, add them here.
 ## ChatGPT
 | Leg | From temple | Transport | Distance |
 | --- | --- | --- | --- |
-| 1 | Trimbakeshwar | Bus to Nashik CBS | ~28-30 km |
+| 1 | Temple-1 | Point A to Point B | ~x-y km |
 
 ## You
->> this is very good but add distances
+>> this is good but add distances
 ```
 
 **Sample Output (HTML):** Clean page with dark code blocks, scrollable tables, and footer `Made with ❤️ by Pratik ● GitHub`
@@ -253,16 +253,16 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Pratik (Sananda Patra)** - Full Stack Developer | Chrome Extension Enthusiast
 
-- GitHub: [@your-github](https://github.com) <!-- change the URL here -->
-- LinkedIn: [linkedin.com/in/your-linkedin](https://linkedin.com/in/your-linkedin)
-- Email: `your.email@example.com`
-- Portfolio: `https://your-portfolio.com`
+- GitHub: [@pratik-maity](https://github.com/pratik-maity/) <!-- change the URL here -->
+- LinkedIn: [linkedin.com/in/pratik-maity](https://www.linkedin.com/in/pratik-maity/)
+- Email: <!--`your.email@example.com` -->
+- Portfolio: `https://pratik-maity.github.io/tech-portfolio/`
 
 ---
 
 <div align="center">
 
-Made with ❤️ by Pratik ● <a href="https://github.com">GitHub</a>
+Made with ❤️ by Pratik ● <a href="https://github.com/pratik-maity/">GitHub</a>
 <!-- change the URL here - replace https://github.com with your repo url -->
 
 If you like this project, give it a ⭐ on GitHub!
